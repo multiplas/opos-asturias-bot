@@ -17,15 +17,6 @@ Bot en Python que revisa fuentes de empleo público en Asturias y envía avisos 
 3. Configura los secretos en GitHub:
    - `BOT_TOKEN`
    - `CHAT_ID`
-   - `REPO_PUSH_TOKEN` (opcional, pero recomendado si el `GITHUB_TOKEN` no puede hacer `git push`)
-
-### Permisos del workflow
-
-Si ves errores `403` al hacer `git push` desde Actions, revisa:
-
-- **Settings → Actions → General → Workflow permissions**: debe estar en **Read and write**.
-- Si tienes protección de rama en `main`, permite que GitHub Actions pueda hacer push o crea una excepción para el bot.
-- Alternativamente, crea un **Personal Access Token (classic)** con scope `repo` y guárdalo como `REPO_PUSH_TOKEN` para que el workflow empuje con ese token.
 
 ## Configuración de fuentes
 
@@ -41,7 +32,6 @@ Edita `data/sources.yaml` para añadir o ajustar fuentes. Cada fuente puede defi
 
 ### Limitaciones conocidas
 
-- El filtrado por keywords solo revisa título, fechas y organismo (no URLs) para evitar falsos positivos por rutas internas.
 - El buscador de AGE (`age`) puede requerir filtros adicionales o parámetros. Si la web cambia y no devuelve resultados con la página base, el bot registrará un aviso en logs y seguirá con el resto de fuentes.
 - En sedes tipo STA se recorren enlaces de empleo/tablon detectados y hasta 3 páginas de paginación para evitar abusar.
 

@@ -33,9 +33,11 @@ def _matches_keywords(item: Item, include: list[str], exclude: list[str], match_
     text = " ".join(
         [
             item.title or "",
+            item.url or "",
             item.date or "",
             item.deadline or "",
             item.organization or "",
+            str(item.raw) if item.raw else "",
         ]
     ).lower()
     if exclude and any(keyword in text for keyword in exclude):

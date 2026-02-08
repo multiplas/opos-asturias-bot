@@ -50,17 +50,10 @@ def _parse_items(source_id: str, page_url: str, html: str) -> list[Item]:
     soup = BeautifulSoup(html, "html.parser")
     items: list[Item] = []
     for anchor in soup.find_all("a", href=True):
-        if anchor.find_parent(["nav", "header", "footer"]):
-            continue
         title = normalize_whitespace(anchor.get_text(" ", strip=True))
         if not title or len(title) < 6:
             continue
-        href = anchor["href"].strip()
-        if href.startswith("#") or href.lower().startswith("javascript:"):
-            continue
-        if "PAGE_CODE=SEDE_" in href and "EMPLEO" not in href and "PTS2_EMPLEO" not in href:
-            continue
-        href = urljoin(page_url, href)
+        href = urljoin(page_url, anchor["href"].strip())
         text_context = anchor.parent.get_text(" ", strip=True)
         date = _extract_date(text_context)
         item_id = make_hash_id(source_id, title, href, date or "")

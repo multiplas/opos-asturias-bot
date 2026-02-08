@@ -42,9 +42,4 @@ def send_telegram(items: Iterable[Item], bot_token: str, chat_id: str) -> None:
         try:
             response.raise_for_status()
         except requests.RequestException as exc:
-            logger.warning(
-                "Failed to send Telegram message for %s: %s (response: %s)",
-                item.url,
-                exc,
-                response.text,
-            )
+            logger.warning("Failed to send Telegram message for %s: %s", item.url, exc)

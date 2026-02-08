@@ -17,15 +17,6 @@ Bot en Python que revisa fuentes de empleo público en Asturias y envía avisos 
 3. Configura los secretos en GitHub:
    - `BOT_TOKEN`
    - `CHAT_ID`
-   - `REPO_PUSH_TOKEN` (opcional, pero recomendado si el `GITHUB_TOKEN` no puede hacer `git push`)
-
-### Permisos del workflow
-
-Si ves errores `403` al hacer `git push` desde Actions, revisa:
-
-- **Settings → Actions → General → Workflow permissions**: debe estar en **Read and write**.
-- Si tienes protección de rama en `main`, permite que GitHub Actions pueda hacer push o crea una excepción para el bot.
-- Alternativamente, crea un **Personal Access Token (classic)** con scope `repo` y guárdalo como `REPO_PUSH_TOKEN` para que el workflow empuje con ese token.
 
 ## Configuración de fuentes
 

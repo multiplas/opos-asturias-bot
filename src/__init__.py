@@ -1,0 +1,1 @@
+"""Opos Asturias bot package."""

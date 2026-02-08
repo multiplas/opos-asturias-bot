@@ -1,0 +1,48 @@
+include_keywords:
+  - informátic
+  - informatic
+  - sistemas
+  - desarrollo
+  - programador
+  - web
+  - aplicaciones
+  - software
+  - tic
+  - "técnico superior"
+  - "administración electrónica"
+  - datos
+exclude_keywords:
+  - monitor
+  - socorrista
+  - peón
+  - albañil
+
+sources:
+  - id: gijon_sta
+    name: "Sede electrónica Gijón (STA)"
+    type: sta
+    url: "https://sedeelectronica.gijon.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=SEDE_EMPLEO"
+    include_keywords: []
+    exclude_keywords: []
+    match_any: false
+  - id: mieres_sta
+    name: "Sede electrónica Mieres (STA)"
+    type: sta
+    url: "https://sedeelectronica.ayto-mieres.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_EMPLEO"
+    include_keywords: []
+    exclude_keywords: []
+    match_any: false
+  - id: principado_tablon
+    name: "Principado de Asturias - Tablón electrónico"
+    type: principado
+    url: "https://sede.asturias.es/tablon-electronico-de-anuncios"
+    include_keywords: []
+    exclude_keywords: []
+    match_any: false
+  - id: age_buscador
+    name: "AGE - Buscador empleo público"
+    type: age
+    url: "https://administracion.gob.es/pag_Home/empleoPublico/buscador.html"
+    include_keywords: []
+    exclude_keywords: []
+    match_any: false

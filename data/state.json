@@ -15,7 +15,7 @@
         "ddd8d22c78748d567b2a0b782b5a3e26bdd782d58166d13ce59eaf8dfa56fb6d",
         "f78304248e7ba1af11e7146670546b645a3e971c249b39e0a0f02a5aee9aee53"
       ],
-      "updated_at": "2026-05-17T08:36:07.846227+00:00"
+      "updated_at": "2026-05-18T10:44:41.851012+00:00"
     },
     "mieres_sta": {
       "seen": [
@@ -33,7 +33,7 @@
         "ea72ea2dc509c693e40930f81591d93081f3dca6f14c10c057330a1c3e0394d0",
         "ee520da4c0d57aedc7fd0a3084a7db37af6e1244dd1c459f830688b321c11688"
       ],
-      "updated_at": "2026-05-17T08:36:12.594943+00:00"
+      "updated_at": "2026-05-18T10:44:45.910392+00:00"
     },
     "principado_tablon": {
       "seen": [
@@ -74,6 +74,7 @@
         "6fa20411b6f393b27a52283917f89abc1874f901e8cf4bb1d8cc342b49ecdb5a",
         "768cb94d6f245c0a769aa6745d92f87a8130c180011f17c6abec0c2745f56051",
         "77648059dd32421b946a1a7f9461e1e058609aba2bba2dd9fc195f214630e493",
+        "80f9a1fdbb89df608aa5c34464c9e5097e0b5bc9ab3d462eac5548cfb7e7704d",
         "8b654274ca80f9ab9cba3320dca753bbd61ab6775094cacb111031220c6c11aa",
         "8ca9023d8ef2de38ebfb3a1c3686aae4ebde5515cd6956069075999a2d4c2521",
         "8d22f275ddb7902ed8c582c4d995825b2d601544e11dc0e11bbef0e0036d7017",
@@ -98,7 +99,7 @@
         "fd96b82f7af8a931c3b1809984e2cb4054b63d9dc3d27194415f85325c7d4c6c",
         "fe6c4b280aeffb8231af52304541a496267bfa7b49c87bd67cd985cdabe2e177"
       ],
-      "updated_at": "2026-05-12T09:16:54.704576+00:00"
+      "updated_at": "2026-05-18T10:45:55.210170+00:00"
     }
   }
 }
